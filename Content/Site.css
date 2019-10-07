@@ -1,14 +1,15 @@
 ﻿.home_body {
-    display:block;
-    width:100%;
-    height:100%;
+    display: block;
+    width: 100%;
+    height: 100%;
     background-color: #E9F0F4;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-#div_customerHome{
-    margin:2% !important; 
+
+#div_customerHome {
+    margin: 2% !important;
 }
+
 .cntr_ctrl {
     position: absolute;
     top: 50%;
@@ -16,108 +17,120 @@
     margin-top: -50px;
     margin-left: -100px;
 }
+
 .login_ctrl {
-    padding:2%;
+    padding: 2%;
     background-color: white;
     box-shadow: 5px 5px 15px #222222;
     border-radius: 10px;
     border: 2px solid white;
 }
-.nav-links{
-    float:left!important;
+
+.nav-links {
+    float: left !important;
 }
-.navbar-default{
-    margin:1.5%;
-    border-radius:10px;
+
+.navbar-default {
+    margin: 1.5%;
+    border-radius: 10px;
 }
+
 .selected_tab {
     color: black !important;
     font-size: larger !important;
     background-color: #E9F0F4 !important;
 }
+
 .home_nav {
     /*padding:5% !important;*/
 }
+
 .image {
     display: block;
     width: 100%;
     height: auto;
 }
-.image:hover{
-    cursor:pointer;
-}
+
+.image:hover {
+        cursor: pointer;
+    }
+
 .overlay {
-  position: relative;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: 1s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;   
+    position: relative;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 1s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .my_sub {
     box-shadow: 5px 5px 15px #222222;
     border-radius: 10px;
-    background-color:white;
+    background-color: white;
 }
+
 .my_sub {
     box-shadow: 10px 10px 20px #222222;
     padding: 2%;
 }
 
-    .my_sub:hover .overlay {
+.my_sub:hover .overlay {
         opacity: 1;
-       
     }
-    .my_sub:hover img {
+
+.my_sub:hover img {
         height: 90%;
         width: 90%;
     }
+
 .box {
-    padding:2%;
-    width:50%;
-    height:50%;
+    padding: 2%;
+    width: 50%;
+    height: 50%;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #222222;
-    float:left
+    float: left
 }
-.my_tab{
-    margin:5%;
-    padding-top:10%;
+
+.my_tab {
+    margin: 5%;
+    padding-top: 10%;
 }
 
 .offer_box {
     border: 2px solid white;
     background-color: white;
-    margin: 10% 5% 0 0;    
-    border-radius: 10px;    
+    margin: 10% 5% 0 0;
+    border-radius: 10px;
     display: block;
     float: left;
     box-shadow: 5px 5px 15px #222222;
 }
-.offer_box_info {
-    height: 50%;
-    text-align: center;
-    padding-bottom:50px;
+.offer_box_info:hover h2 {
+    font: larger !important;
 }
-.offerPicDiv {
-    margin-top: -40px;
-}
-    .offerPicDiv:hover {
-        border-color: Highlight;
+    .offer_box_info {
+        height: 50%;
+        text-align: center;
+        padding-bottom: 50px;
     }
+
 .offer_img {
-    border-radius: 50%;
     width: 40%;
     height: 70%;
-    border: 4px solid #E9F0F4;
+    border-radius: 50% !important;
+    border: 4px solid #E9F0F4 !important;
+    
 }
-.offer-img:hover {
-    border-color:Highlight;
+
+.offerPicDiv:hover img {
+    margin-top: -50px;
+    transition: 0.3s ease-in-out !important;
 }
