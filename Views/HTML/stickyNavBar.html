@@ -1,0 +1,16 @@
+﻿<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+
+        <div class="navbar-default">
+            <ul class="nav navbar-nav">
+                <li ng-class="{'selected_tab': selectSubTab==true }" class="nav-links" ng-click="showtab('sub')"><a href="#"><label>My plan</label></a></li>
+                <li ng-class="{'selected_tab': selectOfferTab==true }" ng-click="showtab('offer')"><a href="#" class="nav-links"><label> Offers </label> </a></li>
+                <li ng-class="{'selected_tab': selectFullTab==true }" ng-click="showtab('full')"><a href="#" class="nav-links"><label> Bill </label></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!--wlcm crtrl-->
+            </ul>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
