@@ -53,13 +53,64 @@
 
     <div id="div_customerHome" ng-if="!isDisplayLogin">
         <div class="home_nav">
-            <div ng-include="'/Views/HTML/stickyNavBar.html'"></div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+
+                    <div class="navbar-default">
+                        <ul class="nav navbar-nav">
+                            <li ng-class="{'selected_tab': selectSubTab==true }" class="nav-links" ng-click="showtab('sub')"><a href="#"><label>My plan</label></a></li>
+                            <li ng-class="{'selected_tab': selectOfferTab==true }" ng-click="showtab('offer')"><a href="#" class="nav-links"><label> Offers </label> </a></li>
+                            <li ng-class="{'selected_tab': selectFullTab==true }" ng-click="showtab('full')"><a href="#" class="nav-links"><label> Bill </label></a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <!--wlcm crtrl-->
+                        </ul>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </nav>
         </div>
         <div class="my_tab"ng-if="selectSubTab">
-        <div ng-include="'/Views/HTML/subscriptionTemplate.html'"></div>
+            <div class="container">
+                <div class="row">
+                    <center><h1>My subscription</h1></center>
+                    <center>
+                        <div class="col-xs-12 col-md-6 offer_box">
+                            <div class="my_sub">
+                                <h4>Mobile</h4>
+                                <img src="../../Content/Image/bundle.jpg" class="image">
+                                <div class="overlay">{{customer.subscription.subscriptions[0].name}}</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 offer_box">
+                            <div class="my_sub">
+                                <h4>Mobile</h4>
+                                <img src="../../Content/Image/calls.png" class="image">
+                                <div class="overlay">{{customer.subscription.subscriptions[1].name}}</div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
             </div>
         <div class="my_tab" ng-if="selectOfferTab">
-            <div ng-include="'/Views/HTML/offersTemplate.html'"></div>
+            <<div class="container">
+
+    <div class="row">
+        <center>
+            <div class="col-xs-12 col-md-6 offer_box" ng-repeat="offer in customer.offers">
+                <div class="offerPicDiv">
+                    <center><img src="../../Content/Image/bundle.jpg" class="offer_img"></center>
+                </div>
+                <div class="offer_box_info">
+                    <h2>{{offer.name}}</h2>
+                    <h4>Expires on:{{offer.contractEndDate}}</h4>
+                </div>
+            </div>
+        </center>
+    </div>
+</div>
         </div>
     </div>
 
