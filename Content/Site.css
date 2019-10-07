@@ -59,10 +59,24 @@
   text-align: center;   
 }
 
-
-.my_sub:hover .overlay {
-  opacity: 1;
+.my_sub {
+    box-shadow: 5px 5px 15px #222222;
+    border-radius: 10px;
+    background-color:white;
 }
+.my_sub {
+    box-shadow: 10px 10px 20px #222222;
+    padding: 2%;
+}
+
+    .my_sub:hover .overlay {
+        opacity: 1;
+       
+    }
+    .my_sub:hover img {
+        height: 90%;
+        width: 90%;
+    }
 .box {
     padding:2%;
     width:50%;
@@ -79,16 +93,14 @@
 .offer_box {
     border: 2px solid white;
     background-color: white;
-    margin: 70px 40px 0 0;
-    width: 250px;
-    border-radius: 10px;
-    height: 350px;
+    margin: 70px 40px 0 0;    
+    border-radius: 10px;    
     display: block;
     float: left;
     box-shadow: 5px 5px 15px #222222;
 }
 .offer_box_info {
-    height: 150px;
+    height: 50%;
     text-align: center;
 }
 .offerPicDiv {
@@ -96,8 +108,8 @@
 }
 .offer_img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 70%;
+    height: 70%;
     border: 4px solid #E9F0F4;
 }
 .offer-img:hover {
